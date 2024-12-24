@@ -1,9 +1,137 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="LRry-8tiaS6HzqBhcMT4">
-    <mxGraphModel>
+    <mxGraphModel dx="1290" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-1" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="150" height="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-2" value="ChatGPT" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="398" y="20" width="150" height="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-3" value="Provide Text Prompt" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-1" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="293" y="129" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-4" value="Tokenization (Text -&gt; Tokens)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="183" />
+              <mxPoint x="524" y="213" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-5" value="Apply Positional Encoding (Embed Positions of Tokens)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="267" />
+              <mxPoint x="524" y="297" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-6" value="Embedding Layer (Convert Tokens to Dense Embeddings)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="351" />
+              <mxPoint x="524" y="381" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-7" value="Transformer Block 1" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="435" />
+              <mxPoint x="524" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-8" value="Multi-Head Self-Attention (Compute Token Relationships)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="519" />
+              <mxPoint x="524" y="549" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-9" value="Feed-Forward Neural Networks (Process Relationships)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="603" />
+              <mxPoint x="524" y="633" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-10" value="Apply Layer Normalization (Stabilize Output)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="687" />
+              <mxPoint x="524" y="717" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-11" value="Residual Connections (Prevent Vanishing Gradients)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="771" />
+              <mxPoint x="524" y="801" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-12" value="Transformer Block 2 (Repeat for Multiple Blocks)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="855" />
+              <mxPoint x="524" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-13" value="Generate Token-by-Token Output (Decoder)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="939" />
+              <mxPoint x="524" y="969" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-14" value="Use Previous Tokens and Context for Prediction" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="1023" />
+              <mxPoint x="524" y="1053" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-15" value="Output Token Converted to Text (Detokenizer)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="1107" />
+              <mxPoint x="524" y="1137" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-16" value="Output Response (Text)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="E5JG0-WKW0irPrQr0zAJ-2" target="E5JG0-WKW0irPrQr0zAJ-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="296" y="1191" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-17" value="ChatGPT uses a stack of Transformer Blocks" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="311" y="1211" width="325" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-18" value="Self-attention mechanism captures relationships between all tokens in the input sequence." style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1259" width="656" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-19" value="Token generation is autoregressive (previous tokens influence the next)." style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="211" y="1307" width="524" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="E5JG0-WKW0irPrQr0zAJ-20" value="Fine-tuning is used to improve response quality in real-world use cases." style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="211" y="1355" width="524" height="48" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
